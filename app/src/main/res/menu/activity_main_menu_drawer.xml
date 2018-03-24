@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Complaints">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_pending_complaint"
+                    android:title="Pending Complaint" />
+                <item
+                    android:id="@+id/nav_acc_complaint"
+                    android:title="Acc Complaint" />
+                <item
+                    android:id="@+id/nav_complaint_over"
+                    android:title="Complaints Over" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

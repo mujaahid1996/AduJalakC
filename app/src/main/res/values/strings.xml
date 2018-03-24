@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AduJalak C</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="label_register">Register User</string>
+    <string name="label_login">Login User</string>
+    <string name="label_pending_complaint">Pending Complaint</string>
+    <string name="label_acc_complaint">Acc Complaint</string>
+    <string name="label_detail_acc_complaint">Detail Acc Complaint</string>
+    <string name="label_detail_complaint">Detail Pending Complaint</string>
+    <string name="label_complaint_over">Complaint Over</string>
+    <string name="label_confirm_complaint">Confirm Complaint </string>
+    <string name="label_detail_complaint_over">Detail Complaint Over</string>
+    <string name="label_profile">My Profile</string>
+    <string name="label_update_profil">Update Profil</string>
+    <string name="label_update_pass">Update Password</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/list_row_selector"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ShowComplaintActivity"
+    tools:showIn="@layout/activity_show_complaint">
+
+    <EditText
+        android:id="@+id/txtsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search pending complaint...." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="searchPendingComplaint"
+            android:text="Search" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listComplaint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_row_selector" />
+
+
+</LinearLayout>
+

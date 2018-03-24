@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adujalakc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- permission GPS -->
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- permisson network -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- permission camera -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- permission read write photo -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.adujalakc.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ShowComplaintActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/label_login" />
+        <activity
+            android:name=".DetailComplaintActivity"
+            android:label="@string/label_detail_complaint">
+            <!--toolbar back arrow-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ShowComplaintActivity" />
+        </activity>
+        <activity
+            android:name=".AccComplaintActivity"
+            android:label="@string/label_acc_complaint" />
+        <activity
+            android:name=".DetailAccComplaintActivity"
+            android:label="@string/label_detail_acc_complaint">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AccComplaintActivity" />
+        </activity>
+        <activity
+            android:name=".ComplaintOverActivity"
+            android:label="@string/label_complaint_over" />
+        <activity
+            android:name=".DetailOverActivity"
+            android:label="@string/label_detail_complaint_over">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ComplaintOverActivity" />
+        </activity>
+        <activity
+            android:name=".ConfirmComplaintActivity"
+            android:label="@string/label_confirm_complaint">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AccComplaintActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

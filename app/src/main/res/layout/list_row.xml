@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp">
+
+    <!--gambar-->
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:cropToPadding="true"
+        android:padding="2dp"
+        android:id="@+id/showImage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+    <!--nama-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_alignTop="@+id/showImage"
+        android:layout_toRightOf="@+id/showImage"
+        android:textSize="@dimen/name"
+        android:textStyle="bold"
+        android:text="Nama"/>
+
+    <!--lokasi-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/showImage"
+        android:textSize="@dimen/location"
+        android:text="Lokasi"/>
+
+
+
+    <!--tanggal-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/date"
+        android:textSize="@dimen/date"
+        android:text="Tanggal"/>
+
+</RelativeLayout>
